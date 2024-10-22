@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cálculo de Costo de Carrera</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Costo de Carrera Universitaria</h1>
+    </header>
+
+    <section id="formulario">
+        <h2>Formulario de Cálculo de Costo de Carrera</h2>
+        <form id="costoCarrera" onsubmit="calcularCosto(event)">
+            <label for="nombre">Nombre del Aspirante:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="centro">Tipo de Centro Educativo:</label>
+            <select id="centro" name="centro" required>
+                <option value="publico">Público</option>
+                <option value="privado">Privado</option>
+            </select>
+
+            <label for="carrera">Carrera a Estudiar:</label>
+            <select id="carrera" name="carrera" required>
+                <option value="licenciatura">Licenciatura</option>
+                <option value="medicina">Medicina</option>
+                <option value="ingenieria">Ingeniería</option>
+            </select>
+
+            <input type="submit" value="Calcular Costo">
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
