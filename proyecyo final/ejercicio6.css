@@ -1,0 +1,134 @@
+
+.titulo-con-icono {
+    display: flex;
+    align-items: center; /
+}
+
+.titulo-con-icono .icono {
+    width: 150px; 
+    height: 150px; 
+    margin-right: 10px; 
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+}
+
+header {
+    background-color: #464646; 
+    color: rgb(187, 185, 185);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: rgb(204, 195, 195);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: rgba(226, 218, 218, 0.2); 
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #353535;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el menú */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Necesario para el submenú */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Submenú */
+.submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%; /* Justo debajo del elemento padre */
+    left: 0;
+    background-color: #adabab;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu li a {
+    color: rgb(68, 67, 67);
+    padding: 8px 15px;
+    display: block;
+}
+
+/* Mostrar submenú al pasar el ratón */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+/* Botón para cada integrante */
+.integrante {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: white;
+}
+
+button {
+    background-color: #494848;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5f5e5e;
+}
+
+
